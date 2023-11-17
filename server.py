@@ -1,6 +1,7 @@
+# FastApi-server
 import base64
 # Чтобы можно было указать, что куки опциональны
-from typing import Optional, List
+from typing import Optional
 # модули для подписи данных
 import hmac
 import hashlib
@@ -8,7 +9,7 @@ import json
 
 # Импорт необходимых модулей, в том числе для отправки
 # ответа в браузер
-from fastapi import FastAPI, Form, Cookie, Body
+from fastapi import FastAPI, Form, Cookie
 from fastapi.responses import Response
 
 # Создание экземпляра приложения
